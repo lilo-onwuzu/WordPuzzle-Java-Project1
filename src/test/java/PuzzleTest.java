@@ -6,42 +6,42 @@ public class PuzzleTest {
   @Test
   public void runPuzzle_replacesA(){
     Puzzle testPuzzle = new Puzzle();
-    String expected = "-";
+    String expected = "_";
     assertEquals(expected, testPuzzle.runPuzzle("a"));
   }
 
   @Test
   public void runPuzzle_replacesAandE(){
     Puzzle testPuzzle = new Puzzle();
-    String expected = "--";
+    String expected = "__";
     assertEquals(expected, testPuzzle.runPuzzle("ae"));
   }
 
   @Test
   public void runPuzzle_replacesAandEandI(){
     Puzzle testPuzzle = new Puzzle();
-    String expected = "---";
+    String expected = "___";
     assertEquals(expected, testPuzzle.runPuzzle("aei"));
   }
 
   @Test
   public void runPuzzle_replacesAandEandIandO(){
     Puzzle testPuzzle = new Puzzle();
-    String expected = "----";
+    String expected = "____";
     assertEquals(expected, testPuzzle.runPuzzle("aeio"));
   }
 
   @Test
   public void runPuzzle_replacesAandEandIandOandU(){
     Puzzle testPuzzle = new Puzzle();
-    String expected = "-----";
+    String expected = "_____";
     assertEquals(expected, testPuzzle.runPuzzle("aeiou"));
   }
 
   @Test
   public void runPuzzle_acceptsUpperCaseCharactersForVowels(){
     Puzzle testPuzzle = new Puzzle();
-    String expected = "-----";
+    String expected = "_____";
     assertEquals(expected, testPuzzle.runPuzzle("AEIOU"));
   }
 
