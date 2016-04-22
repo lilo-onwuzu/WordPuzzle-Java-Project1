@@ -30,4 +30,11 @@ public class PuzzleTest {
     String expected = "----";
     assertEquals(expected, testPuzzle.runPuzzle("aeio"));
   }
+
+  @Test
+  public void runPuzzle_replacesAandEandIandOandU(){
+    Puzzle testPuzzle = new Puzzle();
+    String expected = "-----";
+    assertEquals(expected, testPuzzle.runPuzzle("aeiou"));
+  }
 }
