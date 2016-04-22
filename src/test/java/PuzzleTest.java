@@ -9,4 +9,11 @@ public class PuzzleTest {
     String expected = "-";
     assertEquals(expected, testPuzzle.runPuzzle("a"));
   }
+
+  @Test
+  public void runPuzzle_replacesAandE(){
+    Puzzle testPuzzle = new Puzzle();
+    String expected = "--";
+    assertEquals(expected, testPuzzle.runPuzzle("ae"));
+  }
 }
