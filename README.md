@@ -5,11 +5,11 @@ By Ililochi Onwuzu
 
 Description
 
-This code lists some Javascript and JQuery terms. It contains many hidden elements that when clicked on, display more information using Javascript. This was used to practice Javascript at Epicodus (Week 2). Append additional terms to the learning list by clicking on them. The new items are added in the same format as the rest of the list. There are options to darken or lighten the background of the webpage to your liking as well as change to the default
+This site presents a game with two players: Guesser and Coordinator. In the home page, the Coordinator inputs a string of word(s). In the next page (/showPuzzle), a new string is shown with the vowels in the Coordinator's string hidden. Guesser then inputs a string to try to guess the coordinators string. If it matches, the Guesser wins the game. If not, the Coordinator wins. The code was designed using BDD testing principles and was testing in gradle using Junit for the business logic and Fluentinum for the integration tests.
 
 Setup/Installation Requirements
+First clone this repository
 
-Click to view description of the listed terms
 Known Bugs
 
 None
@@ -20,7 +20,7 @@ lpr422@gmail.com
 
 Technologies Used
 
-HTML, CSS, Javascript, JQuery
+HTML, CSS, Java, Fluentinum, Gradle, BDD Testing
 
 License
 
