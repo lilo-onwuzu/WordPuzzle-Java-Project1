@@ -44,4 +44,11 @@ public class PuzzleTest {
     String expected = "-----";
     assertEquals(expected, testPuzzle.runPuzzle("AEIOU"));
   }
+
+  @Test
+  public void runPuzzle_CodeRetainsLowerCaseCharactersForConsonants(){
+    Puzzle testPuzzle = new Puzzle();
+    String expected = "fghj";
+    assertEquals(expected, testPuzzle.runPuzzle("fghj"));
+  }
 }
