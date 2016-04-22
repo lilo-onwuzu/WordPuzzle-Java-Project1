@@ -25,36 +25,16 @@ public class AppTest extends FluentTest {
 
   @Test
   public void showPuzzleTest() {
-    goTo("http://localhost:4567");
+    goTo("http://localhost:4567/");
     submit(".btn");
-    assertThat(pageSource()).contains("Guess");
+    assertThat(pageSource()).contains("Puzzle is:");
   }
 
-  // @Test
-  // public void showPuzzleTest(){
-  //   goTo("http://localhost:4567");
-  //   fillSelect("#playerOne").withValue("rock");
-  //   fillSelect("#playerTwo").withValue("rock");
-  //
-  //   assertThat(pageSource()).contains("Nobody WINS");
-  // }
-  //
-  // @Test
-  // public void outputTestPlayerOneWins(){
-  //   goTo("http://localhost:4567");
-  //   fillSelect("#playerOne").withValue("paper");
-  //   fillSelect("#playerTwo").withValue("rock");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Player One WINS");
-  // }
-  //
-  // @Test
-  // public void outputTestPlayerTwoWins(){
-  //   goTo("http://localhost:4567");
-  //   fillSelect("#playerOne").withValue("scissors");
-  //   fillSelect("#playerTwo").withValue("rock");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Player Two WINS");
-  // }
-
+  @Test
+  public void resultsTest() {
+    goTo("http://localhost:4567/");
+    submit(".btn");
+    submit(".show");
+    assertThat(pageSource()).contains("Refresh to play again");
+  }
 }
