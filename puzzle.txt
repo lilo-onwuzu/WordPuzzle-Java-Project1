@@ -1,0 +1,8 @@
+Business Logic spec
+Code replaces "a" in input string with "-"
+Code replaces "a" and "e" in input string with "-"
+Code replaces "a" and "e" and "i" in input string with "-"
+Code replaces "a" and "e" and "i" and "o" in input string with "-"
+Code replaces "a" and "e" and "i" and "o" and "u" in input string with "-"
+Code retains upper case characters
+Code retains lower case characters
