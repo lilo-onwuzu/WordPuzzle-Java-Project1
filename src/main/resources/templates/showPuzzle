@@ -1,0 +1,5 @@
+<form action = "/result" method="get">
+  <label for="enter"><strong>Guesser, try to guess Coordinator's word or sentence and input below:</strong></label>
+  <input id="enter" name="enter" type="text">
+  <button class="btn" type="submit">Guess!</button>
+</form>
