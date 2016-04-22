@@ -37,4 +37,11 @@ public class PuzzleTest {
     String expected = "-----";
     assertEquals(expected, testPuzzle.runPuzzle("aeiou"));
   }
+
+  @Test
+  public void runPuzzle_acceptsUpperCaseCharactersForVowels(){
+    Puzzle testPuzzle = new Puzzle();
+    String expected = "-----";
+    assertEquals(expected, testPuzzle.runPuzzle("AEIOU"));
+  }
 }
