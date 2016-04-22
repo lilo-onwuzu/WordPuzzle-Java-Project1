@@ -51,4 +51,11 @@ public class PuzzleTest {
     String expected = "fghj";
     assertEquals(expected, testPuzzle.runPuzzle("fghj"));
   }
+
+  @Test
+  public void runPuzzle_CodeRetainsUpperCaseCharactersForConsonants(){
+    Puzzle testPuzzle = new Puzzle();
+    String expected = "FGHJ";
+    assertEquals(expected, testPuzzle.runPuzzle("FGHJ"));
+  }
 }
