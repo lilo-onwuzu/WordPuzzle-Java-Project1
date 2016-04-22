@@ -23,13 +23,19 @@ public class AppTest extends FluentTest {
     assertThat(pageSource()).contains("Let's Play");
   }
 
-  //
+  @Test
+  public void showPuzzleTest() {
+    goTo("http://localhost:4567");
+    submit(".btn");
+    assertThat(pageSource()).contains("Guess");
+  }
+
   // @Test
-  // public void outputTestTie(){
+  // public void showPuzzleTest(){
   //   goTo("http://localhost:4567");
   //   fillSelect("#playerOne").withValue("rock");
   //   fillSelect("#playerTwo").withValue("rock");
-  //   submit(".btn");
+  //
   //   assertThat(pageSource()).contains("Nobody WINS");
   // }
   //

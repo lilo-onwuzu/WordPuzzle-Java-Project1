@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="PuzzleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-22T21:28:21" hostname="epicodus-69.local" time="0.001">
+<testsuite name="PuzzleTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2016-04-22T21:31:54" hostname="epicodus-69.local" time="0.001">
   <properties/>
   <testcase name="runPuzzle_replacesAandEandI" classname="PuzzleTest" time="0.0"/>
   <testcase name="runPuzzle_CodeRetainsLowerCaseCharactersForConsonants" classname="PuzzleTest" time="0.0"/>
