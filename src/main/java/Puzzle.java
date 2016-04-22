@@ -7,7 +7,7 @@ public class Puzzle {
     String[] makeArray = phrase.split("");
 
     for (Integer index = 0; index < makeArray.length; index++){
-      if (makeArray[index].equals("a") || makeArray[index].equals("e") || makeArray[index].equals("i") || makeArray[index].equals("o")){
+      if (makeArray[index].equals("a") || makeArray[index].equals("e") || makeArray[index].equals("i") || makeArray[index].equals("o") || makeArray[index].equals("u")){
         makeArray[index] = "-";
       }
     }
